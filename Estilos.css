@@ -1,6 +1,7 @@
 
 body{
     font-family: Century Gothic;
+    margin: 0px;
 }
 /* PAGINA PRINCIPAL */
 #principal{
@@ -8,35 +9,71 @@ body{
     background-color: rgb(65, 62, 62);
     color: white;
 }
-#encabezado{
-    position: center;
-    text-align: center;
-    background-color: rgb(77, 70, 70);
-    color: white;
-    padding: 5%;
-    font-size: 30px;
+#encabezado h1{
     background-image: url(Imagenes/fondoheader.jpg);
-    background-repeat: no-repeat;
-    background-position: 60% 40%;
-  
-}
-#barra div{
-    text-align: center;
-    background-color: black;
-    
-    border: 20px solid black ;
+    margin: 0px;
+    background-position: center;
+    height: 70px;
+    text-align:center;
+    padding: 50px;
+    color: black;
+    font-size: 60px;
+   
 
+}
+
+/* #encabezado div h1{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+} */
+
+/* #encabezado {
+    background-color: rgb(77, 70, 70);
+    position: center;
+    color:black;
+    padding: 20px;
     
+    height: 200px;
+    font-size: 30px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
 }
-#barra div a {
-    color: white;
-    margin: 20px;
-    text-decoration: none;
+#encabezado div{
+    text-align: center;
+} */
+#barra ul{
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+    background-color: black;   
+    border: 20px solid black ; 
+    margin:0px; 
+}
+#barra ul li  { 
+    /*  */
+    display: inline;   
+}
+#barra ul li a{
     font-size: 20px;
-    background-color: rgb(92, 48, 11);
-    padding:  10px;
-    border-radius: 6px ;
+    color: white;
+    text-decoration: none;
+    padding:  8px 10px;
+    display: inline-block;     
 }
+#barra ul li a:hover{
+    background-color: rgb(97, 64, 45) ; /* cuando el mouse se acerque*/
+    color: black;
+}
+
+
+nav div a:hover{
+    background-color: brown;
+    color: cornflowerblue;
+}
+
 .informacion
 {
     text-align: justify;
