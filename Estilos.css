@@ -1,105 +1,266 @@
-
-body{
-    font-family: Century Gothic;
-    margin: 0px;
+body {
+  font-family: Century Gothic;
+  margin: 0px;
 }
-/* PAGINA PRINCIPAL */
-#principal{
-    
-    background-color: rgb(65, 62, 62);
-    color: white;
+/* -----------------------PAGINA PRINCIPAL - body ------------------- */
+#principal {
+  background-color: rgb(65, 62, 62);
+  color: white;
 }
-#encabezado h1{
-    background-image: url(Imagenes/fondoheader.jpg);
-    margin: 0px;
-    background-position: center;
-    height: 70px;
-    text-align:center;
-    padding: 50px;
-    color: black;
-    font-size: 60px;
-   
-
+/* Header */
+#encabezado h1 {
+  background-image: url(Imagenes/fondoheader.jpg);
+  margin: 0px;
+  background-position: center;
+  height: 70px;
+  text-align: center;
+  padding: 50px;
+  color: black;
+  font-size: 60px;
 }
 
-/* #encabezado div h1{
-    color: black;
-    font-size: 30px;
-    text-align: center;
-    padding: 20px;
-} */
-
-/* #encabezado {
-    background-color: rgb(77, 70, 70);
-    position: center;
-    color:black;
-    padding: 20px;
-    
-    height: 200px;
-    font-size: 30px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
+/* Nav bar - barra de navegacion */
+#barra ul {
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+  background-color: black;
+  border: 1px solid black;
+  margin: 0px;
 }
-#encabezado div{
-    text-align: center;
-} */
-#barra ul{
-    list-style: none;
-    padding: 0px;
-    text-align: center;
-    background-color: black;   
-    border: 20px solid black ; 
-    margin:0px; 
+#barra ul li {
+  display: inline;
 }
-#barra ul li  { 
-    /*  */
-    display: inline;   
+#barra ul li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+  display: inline-block;
 }
-#barra ul li a{
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    padding:  8px 10px;
-    display: inline-block;     
-}
-#barra ul li a:hover{
-    background-color: rgb(97, 64, 45) ; /* cuando el mouse se acerque*/
-    color: black;
+/* accion de heredación para darle un estilo a los "botones", */
+#barra ul li a:hover {
+  background-color: rgb(97, 64, 45); /* cuando el mouse se acerque*/
+  color: black;
+  border-radius: 3px;
 }
 
-
-nav div a:hover{
-    background-color: brown;
-    color: cornflowerblue;
+/* Div contenedor de todo el contenido */
+.contenedor_principal {
+  text-align: justify;
+}
+/* informacion principal, la historia */
+#historia {
+  background-color: rgb(87, 52, 19);
+  text-align: center;
+  padding: 1px;
+  height: 30%;
+}
+#titulo1 {
+  font-size: 50px;
 }
 
-.informacion
-{
-    text-align: justify;
+.informacion {
+  background-color: rgb(116, 70, 27);
+  border-radius: 5px;
+  text-align: center;
+
+  padding: 3px;
+  overflow: hidden;
+  margin: 10px;
+}
+#img_texas {
+  float: left;
+  width: 150px;
+}
+#img_banda {
+  float: left;
+  width: 450px;
+}
+#img_metora {
+  float: right;
+  width: 150px;
+}
+#img_suns {
+  float: left;
+  width: 150px;
+}
+
+/* Segundo titulo "albums de la banda" */
+.caja3 {
+  background-color: rgb(87, 52, 19);
+  text-align: center;
+
+  padding-bottom: 30px;
+}
+.titulo2 {
+  font-size: 30px;
+}
+div p {
+  background-color: rgb(116, 70, 27);
+  border-radius: 5px;
+  text-align: center;
+  padding: 3px;
+  margin: 10px;
+}
+
+#tabla {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(116, 70, 27);
+  padding: 2px;
+}
+
+th,td {
+  width: 25%;
+  text-align: center;
+  vertical-align: top;
+  border: 1px solid rgb(255, 255, 255);
+  border-collapse: collapse;
+  /* padding: 0.3em;    */
+}
+
+li {
+  text-align: left;
+}
+
+/* Fuentes */
+#fuente {
+  background-color: rgb(87, 52, 19);
+  text-align: center;
+  padding: 1px;
+  margin-top: 2%;
+  border-radius: 4px;
+  
+  
+  padding: 3px;
+}
+
+#link ul {
+  list-style: none;
+
+  text-align: center;
+  background-color: rgb(88, 79, 79);
+  border-radius: 5px;
+  margin: 0px;
+}
+#link ul li {
+  display: inline;
+}
+#link ul li a {
+  color: white;
+  margin: 10px;
+  padding: 3px;
+  font-size: 15px;
+  display: inline-block;
+  text-decoration: none;  
+}
+#link ul li a:hover{
+  background-color: rgb(172, 156, 147); /* cuando el mouse se acerque*/
+  color: black;
+  border-radius: 4px;
 }
 
 
-#footer
-{
-    background-color: black;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    color: white;
-    text-align: center;
+#footer {
+  background-color: black;
+  bottom: 0;
+  height: 40px;
+  color: white;
+  text-align: left;
+  font-size: 10px;
 }
+
+/*--------------------------INTEGRANTES--------------------- */
+#fondo_integrantes{
+  background-color:rgb(25, 34, 46);
+}
+#titulo_integrantes div{
+  text-align: center;
+  background-color: rgb(33, 73, 110);
+  color: white;
+  margin: 0px;
+  padding: 40px;
+  background-image: url(Imagenes/integrantes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -30px;
+  zoom: 120%;
+}
+
+#navegador ul{
+  list-style: none;
+  margin: 0px;
+  text-align: center;
+  background-color: rgb(20, 27, 37);
+}
+
+#navegador ul li{
+  
+    display: inline;
+}
+#navegador ul li a {
+  font-size: 20px;
+  color: rgb(196, 186, 186);
+  text-decoration: none;
+  padding: 8px 10px;
+  display: inline-block;
+}
+#navegador ul li a:hover{
+  background-color: rgb(47, 62, 83); /* cuando el mouse se acerque*/
+  color: white;
+  border-radius: 3px;
+}
+.contenedor{
+  background-color:rgb(46, 63, 87) ;
+  color: aliceblue;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  
+}
+
+.info_integrante{
+  overflow: hidden;
+  background-color: rgb(56, 79, 110);
+}
+/* EDICIÓN DE LAS IMAGENES */
+#img_chester{
+  float: left;
+  width: 200px;
+}
+#img_brad{
+  float: left;
+  width: 500px;
+}
+#img_dave{
+  float: right;
+  width: 300px;
+}
+#img_joe{
+  float: right;
+  width: 300px;
+  
+}
+#img_mike{
+  float: left;
+  width: 300px;
+}
+
+
+
+
+
+
 
 
 
 
 /* SOCIAL */
-.botonimagen{
-    background-image:url(https://icon-icons.com/icons2/195/PNG/48/YouTube_23392.png);
-    width: 52px;
-    height: 52px;
-    
-    
-
+.botonimagen {
+  background-image: url(https://icon-icons.com/icons2/195/PNG/48/YouTube_23392.png);
+  width: 52px;
+  height: 52px;
 }
-
