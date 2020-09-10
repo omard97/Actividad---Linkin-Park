@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Juego</title>
+
+
+  <link rel="stylesheet" href="Estilos_Paginas.css">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+
+  <link rel="icon" type="image/jpg" href="../Imagenes/icono.png">
+
+
+
+</head>
+
+<body class="body_juego">
+  <header style="border-bottom: groove 2px rgb(207, 200, 200);" class="encabezado">
+    <div>
+      <h1>Mini Juego</h1>
+      <p>Bienvenido al area entretenimiento, se va a poner a prueba su conocimiento sobre la reconocida banda de rock
+        llamada LINKIN PARK.</p>
+    </div>
+  </header>
+
+  <nav class="paginas">
+    <ul>
+        <h1 style="font-size: 30px; margin: 0px; font-family:Century Gothic; color:white">Paginas</h1>
+        <li><a href="../Index.html">Pagina Principal</a></li>
+        <li><a href="Integrantes.html">Integrantes</a></li>
+        <li><a href="Canciones.html">Canciones</a></a></li> 
+    </ul>
+</nav>
+
+
+
+
+  <div class="caja_fondo">
+    <div class="caja_superior">
+      <h2 style="text-align: center; color: white;">Consigna</h2>
+      <p>Se le mostrara un texto con una adivinanza haciendo referencia al tema del sitio web, dispondra de 4 intentos
+        para acertar a la adivinanza, si no llega a encontrar la respues usted no es un verdadero fan de LINKIN PARK.
+        <br>
+        SUERTE.</p>
+    </div>
+
+  </div>
+  <div class="caja_fondo">
+
+    <div id="contenedor_pregunta" class="caja_pregunta">
+      <h2 style=" color: aliceblue; font-size: 45px;">Pregunta/s</h2>
+      <p style="color: rgb(219, 222, 224); font-size: 25px;">INTENTOS:</p>
+
+      <input class="visor_contador" id="numintentos" type="text" disabled="disabled" value="4">
+
+
+      <p style="text-align: center; font-size: 30px; color: beige;" id="pregunta"> 1) Cual fue el álbum debut de la
+        banda?</p>
+
+      <p id="pista1"></p>
+      <p id="pista2"></p>
+
+    </div>
+    <br>
+
+    <div class="caja_respuesta">
+
+      <label for="respuesta">Respuesta :</label>
+
+      <input id='respuesta' type="text" class="" placeholder="Ingrese su respuesta">
+
+      <button id="btn1" type="button" onclick="adivinanza();" value="enviar" class="btn btn-primary">Aceptar</button>
+      <br><br>
+
+
+
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <footer>
+      Sitio web creado utilizando:
+      <ul>
+        <li>HTML 5</li>
+        <li>CSS</li>
+        
+      </ul>
+      <p>© 1997-2020 D'Andrea Omar Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
